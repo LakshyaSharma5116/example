@@ -1,1 +1,1 @@
-print("We have something going on here")
+require("example").setup()
