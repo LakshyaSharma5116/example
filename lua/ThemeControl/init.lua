@@ -60,7 +60,8 @@ function M.setup(opts)
 
 	-- resets colorscheme to designated default scheme
 	vim.api.nvim_create_user_command("ResetTheme", function()
-		vim.cmd(":colorscheme " .. colorschemes[default])
+			curTheme = default
+		vim.cmd(":colorscheme " .. colorschemes[curTheme])
 	end, {})
 
 	-- sets background as transparent
